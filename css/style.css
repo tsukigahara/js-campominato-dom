@@ -1,0 +1,92 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+header {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 200px);
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    padding: 2px 0;
+}
+
+.blocks {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    position: relative;
+    cursor: pointer;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+
+}
+
+.center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+footer small {
+    margin: 20px;
+}
