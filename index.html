@@ -17,32 +17,35 @@
     <script src="js/myscript.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Minefield.js</h1>
-        <!-- score -->
-        <small id="scoreID"></small>
-    </header>
-    <main id="main">
-        <h2 style="color: white; font-size: 100%;">ARE YOU READY?</h2>
-        <!-- Generated content here -->
-    </main>
-    <footer class="">
-        <!-- gamemode selector -->
-        <div class="row">
-            <div class="col-6">
-                <select class="form-select" name="gamemode" id="gamemodeID">
-                    <option selected value="1">Easy</option>
-                    <option value="2">Normal</option>
-                    <option value="3">Hard</option>
-                </select>
+    <!-- wrapping for mobile browsers-->
+    <div class="wrapper">
+        <header>
+            <h1>Minefield.js</h1>
+            <!-- score -->
+            <small id="scoreID"></small>
+        </header>
+        <main id="main">
+            <h2 style="color: white; font-size: 100%;">ARE YOU READY?</h2>
+            <!-- Generated content here -->
+        </main>
+        <footer class="">
+            <!-- gamemode selector -->
+            <div class="row">
+                <div class="col-6">
+                    <select class="form-select" name="gamemode" id="gamemodeID">
+                        <option selected value="1">Easy</option>
+                        <option value="2">Normal</option>
+                        <option value="3">Hard</option>
+                    </select>
+                </div>
+                <!-- Gen button -->
+                <div class="col-6">
+                    <!-- <input name="" id="" type="button" class="btn btn-primary" onclick="" value="Generate!"> -->
+                    <button type="button" class="btn btn-success" onclick="fieldGen()" id="buttonID">Generate!</button>
+                </div>
             </div>
-            <!-- Gen button -->
-            <div class="col-6">
-                <!-- <input name="" id="" type="button" class="btn btn-primary" onclick="" value="Generate!"> -->
-                <button type="button" class="btn btn-success" onclick="fieldGen()" id="buttonID">Generate!</button>
-            </div>
-        </div>
-        <small>Made by Tsukigahara</small>
-    </footer>
+            <small>Made by Tsukigahara</small>
+        </footer>
+    </div>
 </body>
 </html>
