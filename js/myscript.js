@@ -29,17 +29,17 @@ function gamemodeGen (value){
     var contentHTML;
     //easy
     if (value == 1){
-        contentHTML = layoutGen(10);
+        contentHTML = layoutGen(10, 10);// <----- value for layoutGen (score count)
         return [contentHTML, 8];// <----- value for redblockGen
     }
     //normal
     if (value == 2){
-        contentHTML = layoutGen(9);
+        contentHTML = layoutGen(9, 25);// <----- value for layoutGen (score count)
         return [contentHTML, 7];// <----- value for redblockGen
     }
     //hard
     if (value == 3){
-        contentHTML = layoutGen(7);
+        contentHTML = layoutGen(7, 50);// <----- value for layoutGen (score count)
         return [contentHTML, 5];// <----- value for redblockGen
     }
 }
@@ -50,7 +50,7 @@ function gamemodeGen (value){
 
 
 //create grid of blocks depending on input value
-function layoutGen (value){
+function layoutGen (value, scoreValue){
 
     // index for numerate blocks
     var numerate = 1;
@@ -88,7 +88,7 @@ function layoutGen (value){
                 coverHTML.classList.remove("cover");
 
                 // increment score
-                score += 10;
+                score += scoreValue;
                 scoreHTML.innerHTML = "score: "+score;
             })
 
