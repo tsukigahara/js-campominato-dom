@@ -2,9 +2,6 @@
     font-family: 'Press Start 2P', cursive;
     box-sizing: border-box;
 }
-html {
-    background-color: black;
-}
 
 .wrapper {
     position: fixed;
@@ -50,7 +47,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70%;
+    font-size: 60%;
     position: relative;
     cursor: pointer;
 }
